@@ -5,6 +5,16 @@ steps:
   build-prj:
     type: build
     description: e2e use case
-    dockerfile: Dockerfile
-    image-name: test/new2
+    dockerfile: 
+      content: |
+        FROM node:latest
+        RUN mkdir -p /usr/src/app
+        WORKDIR /usr/src/app
+        COPY package.json /usr/src/app/
+        RUN npm install --silent
+        COPY . /usr/src/app
+        EXPOSE 3000
+        ENV PORT 3000
+        CMD [ "npm", "start" ]
+    image-name: test/new3
     tag: latest
