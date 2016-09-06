@@ -8,8 +8,7 @@ steps:
     dockerfile:
       content: |
         FROM node:latest
-
-        ARG argument
+        RUN mkdir -p /usr/src/app
         WORKDIR /usr/src/app
 
         COPY package.json /usr/src/app/
@@ -22,5 +21,3 @@ steps:
         # RUN echo $argument
         CMD [ "npm", "start" ]
     tag: latest
-    build-arguments:
-      - argument=TEST
