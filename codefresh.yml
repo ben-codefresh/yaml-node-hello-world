@@ -19,6 +19,6 @@ steps:
 
         ENV PORT 3000
 
-        # RUN echo $argument
+        
         CMD [ "npm", "start" ]
     tag: latest
