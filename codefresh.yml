@@ -5,5 +5,6 @@ steps:
   build-prj:
     type: build
     description: e2e use case
-    image-name: test/new
+    dockerfile: Dockerfile
+    image-name: test/new2
     tag: latest
