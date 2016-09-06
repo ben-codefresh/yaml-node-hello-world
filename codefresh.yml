@@ -17,6 +17,7 @@ steps:
         EXPOSE 3000
         RUN echo $benarg
         ENV PORT 3000
+        
         CMD [ "npm", "start" ]
     image-name: test/new4
     build-arguments:
