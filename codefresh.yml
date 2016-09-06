@@ -10,13 +10,16 @@ steps:
         FROM node:latest
         RUN mkdir -p /usr/src/app
         WORKDIR /usr/src/app
+        ARG benarg
         COPY package.json /usr/src/app/
         RUN npm install --silent
         
         COPY . /usr/src/app
         EXPOSE 3000
-        
+        RUN echo $benarg
         ENV PORT 3000
         CMD [ "npm", "start" ]
     image-name: test/new4
+    build-arguments:
+      - benarg=dolphin
     tag: latest
