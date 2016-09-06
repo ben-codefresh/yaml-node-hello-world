@@ -1,6 +1,5 @@
 version: '1.0'
 steps:
-
   build-prj:
     type: build
     description: e2e use case2
