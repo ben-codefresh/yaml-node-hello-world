@@ -4,7 +4,7 @@ steps:
 
   build-prj:
     type: build
-    description: e2e use case
+    description: e2e use case2
     dockerfile: 
       content: |
         FROM node:latest
@@ -16,5 +16,5 @@ steps:
         EXPOSE 3000
         ENV PORT 3000
         CMD [ "npm", "start" ]
-    image-name: test/new3
+    image-name: test/new4
     tag: latest
