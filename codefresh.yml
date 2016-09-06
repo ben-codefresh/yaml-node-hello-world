@@ -19,7 +19,7 @@ steps:
 
         ENV PORT 3000
 
-        RUN echo $argument
+        # RUN echo $argument
         CMD [ "npm", "start" ]
     tag: latest
     build-arguments:
