@@ -5,5 +5,5 @@ steps:
   build-prj:
     type: build
     description: e2e use case
-    image-name: codefreshio/bbb
+    image-name: test/new
     tag: latest
