@@ -9,4 +9,4 @@ steps:
     dockerfile: Dockerfile
     tag: latest
     build-arguments:
-      - argument=TEST
+      - argument=${{KEY}}
