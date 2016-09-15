@@ -13,6 +13,6 @@ steps:
   
   check-limit:
     type: image-validator
-    image: ${{build-prj}} #check specific image or from candidate
-    size: '25M'
+    image: ${{build-prj}} #check specific image or from candidate  ${{KEY}}
+    max-size: 20
     
