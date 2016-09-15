@@ -9,4 +9,10 @@ steps:
     dockerfile: Dockerfile
     tag: latest
     build-arguments:
-      - argument=${{KEY}}
+      - argument=dolphin
+  
+  check-limit:
+    type: image-validator
+    image: ${{build-prj}} #check specific image or from candidate
+    size: '25M'
+    
