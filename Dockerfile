@@ -14,4 +14,6 @@ EXPOSE 3000
 
 ENV PORT 3000
 
+ENV BLAH 123
+
 CMD [ "sh", "./print.sh" ]
