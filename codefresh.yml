@@ -6,3 +6,6 @@ steps:
     description: e2e use case
     image-name: codefreshio/yaml-node-1
     dockerfile: Dockerfile
+  count:
+    commands:
+      - sh ./count.sh
