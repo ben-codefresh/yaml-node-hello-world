@@ -10,3 +10,15 @@ steps:
     image: ${{build-prj}}
     commands:
       - sh ./count.sh
+  count2:
+    image: ${{build-prj}}
+    commands:
+      - sh ./count.sh
+  count3:
+    image: ${{build-prj}}
+    commands:
+      - sh ./count.sh
+  count4:
+    image: ${{build-prj}}
+    commands:
+      - sh ./count.sh
